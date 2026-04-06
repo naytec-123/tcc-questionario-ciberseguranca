@@ -16,9 +16,9 @@
       <p class="text-sm text-gray-500 mt-4">Pesquisa anônima • Suas respostas são confidenciais</p>
     </div>
 
-    <form action="https://formsubmit.co/nayara.producao.lima@gmail.com" method="POST" class="space-y-10">
+    <form action="https://formsubmit.co/SEUEMAIL@GMAIL.COM" method="POST" class="space-y-10">
       
-      <!-- Consentimento LGPD -->
+      <!-- CONSENTIMENTO LGPD (OBRIGATÓRIO) -->
       <div class="bg-amber-50 border border-amber-300 p-6 rounded-2xl">
         <label class="flex gap-3 cursor-pointer">
           <input type="checkbox" required class="mt-1 w-5 h-5 accent-green-600">
@@ -26,7 +26,7 @@
         </label>
       </div>
 
-      <!-- Perfil -->
+      <!-- Perfil, Conhecimento, Hábitos e Barreiras (mesmo de antes + melhorado) -->
       <div>
         <h2 class="text-xl font-semibold mb-6 flex items-center gap-2"><i class="fas fa-user"></i> 1. Perfil do Respondente</h2>
         <div class="grid grid-cols-2 gap-6">
@@ -42,7 +42,7 @@
           </div>
           <div>
             <label class="block text-sm mb-2">Cargo na empresa</label>
-            <input type="text" name="cargo" required placeholder="Ex: Gerente, Vendedor, Técnico..." class="w-full p-4 border rounded-2xl">
+            <input type="text" name="cargo" required placeholder="Ex: Gerente, Vendedor..." class="w-full p-4 border rounded-2xl">
           </div>
           <div>
             <label class="block text-sm mb-2">Setor da PME</label>
@@ -56,18 +56,13 @@
             </select>
           </div>
         </div>
-        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
-          <label class="flex items-center gap-2"><input type="checkbox" name="usa_digital" value="Sim"> Uso ferramentas digitais diariamente</label>
-          <label class="flex items-center gap-2"><input type="checkbox" name="acesso_dados" value="Sim"> Tenho acesso a dados sensíveis da empresa</label>
-        </div>
       </div>
 
-      <!-- Conhecimento -->
       <div>
         <h2 class="text-xl font-semibold mb-6">2. Conhecimento sobre Cibersegurança</h2>
         <div class="space-y-8">
           <div>
-            <p class="mb-3">Você já ouviu falar de <strong>phishing</strong> (e-mails falsos que pedem senhas ou cliques)?</p>
+            <p class="mb-3">Você já ouviu falar de <strong>phishing</strong> (e-mails falsos)?</p>
             <label class="flex gap-3"><input type="radio" name="phishing" value="Sim" required> Sim</label>
             <label class="flex gap-3"><input type="radio" name="phishing" value="Não"> Não</label>
           </div>
@@ -80,40 +75,21 @@
         </div>
       </div>
 
-      <!-- Comportamentos -->
       <div>
-        <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança (marque a frequência)</h2>
+        <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança</h2>
         <table class="w-full text-sm">
-          <thead class="bg-gray-100">
-            <tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text-center">Sempre</th></tr>
-          </thead>
+          <thead class="bg-gray-100"><tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text-center">Sempre</th></tr></thead>
           <tbody class="divide-y">
-            <tr><td class="p-4">Uso senhas fortes e diferentes em cada conta</td>
-              <td class="text-center"><input type="radio" name="senhas" value="Nunca"></td>
-              <td class="text-center"><input type="radio" name="senhas" value="Raramente"></td>
-              <td class="text-center"><input type="radio" name="senhas" value="Às vezes"></td>
-              <td class="text-center"><input type="radio" name="senhas" value="Sempre"></td>
-            </tr>
-            <tr><td class="p-4">Verifico o endereço (URL) antes de clicar em links</td>
-              <td class="text-center"><input type="radio" name="url" value="Nunca"></td>
-              <td class="text-center"><input type="radio" name="url" value="Raramente"></td>
-              <td class="text-center"><input type="radio" name="url" value="Às vezes"></td>
-              <td class="text-center"><input type="radio" name="url" value="Sempre"></td>
-            </tr>
-            <tr><td class="p-4">Atualizo meu antivírus e sistema operacional</td>
-              <td class="text-center"><input type="radio" name="atualizacao" value="Nunca"></td>
-              <td class="text-center"><input type="radio" name="atualizacao" value="Raramente"></td>
-              <td class="text-center"><input type="radio" name="atualizacao" value="Às vezes"></td>
-              <td class="text-center"><input type="radio" name="atualizacao" value="Sempre"></td>
-            </tr>
+            <tr><td class="p-4">Uso senhas fortes e diferentes em cada conta</td><td class="text-center"><input type="radio" name="senhas" value="Nunca"></td><td class="text-center"><input type="radio" name="senhas" value="Raramente"></td><td class="text-center"><input type="radio" name="senhas" value="Às vezes"></td><td class="text-center"><input type="radio" name="senhas" value="Sempre"></td></tr>
+            <tr><td class="p-4">Verifico o endereço (URL) antes de clicar em links</td><td class="text-center"><input type="radio" name="url" value="Nunca"></td><td class="text-center"><input type="radio" name="url" value="Raramente"></td><td class="text-center"><input type="radio" name="url" value="Às vezes"></td><td class="text-center"><input type="radio" name="url" value="Sempre"></td></tr>
+            <tr><td class="p-4">Atualizo meu antivírus e sistema operacional</td><td class="text-center"><input type="radio" name="atualizacao" value="Nunca"></td><td class="text-center"><input type="radio" name="atualizacao" value="Raramente"></td><td class="text-center"><input type="radio" name="atualizacao" value="Às vezes"></td><td class="text-center"><input type="radio" name="atualizacao" value="Sempre"></td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Percepções e Barreiras -->
       <div>
         <h2 class="text-xl font-semibold mb-6">4. Percepções e barreiras</h2>
-        <p class="mb-3">O que mais dificulta você seguir boas práticas de segurança na empresa?</p>
+        <p class="mb-3">O que mais dificulta seguir boas práticas de segurança?</p>
         <div class="grid grid-cols-2 gap-3 text-sm">
           <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Falta de tempo"> Falta de tempo</label>
           <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Não sei como fazer"> Não sei como fazer</label>
@@ -123,7 +99,7 @@
       </div>
 
       <input type="hidden" name="_subject" value="Nova resposta - Questionário TCC Cibersegurança Altamira">
-      <input type="hidden" name="_next" value="https://SEU-REPOSITORIO.vercel.app/obrigado.html">
+      <input type="hidden" name="_next" value="https://tcc-questionario-ciberseguranca.vercel.app/obrigado.html">
       <input type="hidden" name="_captcha" value="false">
 
       <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white py-5 text-xl font-semibold rounded-3xl transition">
