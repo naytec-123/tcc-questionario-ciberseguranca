@@ -85,9 +85,62 @@
         </div>
       </div>
 
-      <!-- 3. Hábitos de segurança -->
+      <!-- 3. Hábitos -->
       <div>
         <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança (marque a frequência)</h2>
         <table class="w-full text-sm">
           <thead class="bg-gray-100">
-            <tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text
+            <tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text-center">Sempre</th></tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr><td class="p-4">Uso senhas fortes e diferentes em cada conta</td><td class="text-center"><input type="radio" name="senhas" value="Nunca"></td><td class="text-center"><input type="radio" name="senhas" value="Raramente"></td><td class="text-center"><input type="radio" name="senhas" value="Às vezes"></td><td class="text-center"><input type="radio" name="senhas" value="Sempre"></td></tr>
+            <tr><td class="p-4">Verifico o endereço (URL) antes de clicar em links</td><td class="text-center"><input type="radio" name="url" value="Nunca"></td><td class="text-center"><input type="radio" name="url" value="Raramente"></td><td class="text-center"><input type="radio" name="url" value="Às vezes"></td><td class="text-center"><input type="radio" name="url" value="Sempre"></td></tr>
+            <tr><td class="p-4">Atualizo antivírus e sistema operacional</td><td class="text-center"><input type="radio" name="atualizacao" value="Nunca"></td><td class="text-center"><input type="radio" name="atualizacao" value="Raramente"></td><td class="text-center"><input type="radio" name="atualizacao" value="Às vezes"></td><td class="text-center"><input type="radio" name="atualizacao" value="Sempre"></td></tr>
+            <tr><td class="p-4">Uso Wi-Fi público para acessar dados da empresa</td><td class="text-center"><input type="radio" name="wifi_publico" value="Nunca"></td><td class="text-center"><input type="radio" name="wifi_publico" value="Raramente"></td><td class="text-center"><input type="radio" name="wifi_publico" value="Às vezes"></td><td class="text-center"><input type="radio" name="wifi_publico" value="Sempre"></td></tr>
+            <tr><td class="p-4">Compartilho senhas com colegas de trabalho</td><td class="text-center"><input type="radio" name="compartilha_senha" value="Nunca"></td><td class="text-center"><input type="radio" name="compartilha_senha" value="Raramente"></td><td class="text-center"><input type="radio" name="compartilha_senha" value="Às vezes"></td><td class="text-center"><input type="radio" name="compartilha_senha" value="Sempre"></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 4. Percepções -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6">4. Percepções e barreiras</h2>
+        <p class="mb-3">O que mais dificulta seguir boas práticas de segurança?</p>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Falta de tempo"> Falta de tempo</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Não sei como fazer"> Não sei como fazer</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Empresa não exige"> Empresa não exige</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Acho que não vai acontecer comigo"> Acho que não vai acontecer comigo</label>
+        </div>
+        <div class="mt-6">
+          <p class="mb-3">Você acha que sua empresa é pequena demais para sofrer ciberataques?</p>
+          <label class="flex gap-3"><input type="radio" name="risco_pequena" value="Sim" required> Sim</label>
+          <label class="flex gap-3"><input type="radio" name="risco_pequena" value="Não"> Não</label>
+        </div>
+      </div>
+
+      <!-- 5. Preferências de treinamento -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6">5. Como você prefere aprender sobre cibersegurança?</h2>
+        <p class="mb-3 text-sm text-gray-600">(marque quantas quiser)</p>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Vídeos curtos no WhatsApp"> Vídeos curtos no WhatsApp</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Palestra presencial"> Palestra presencial</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Gamificação (jogos/quiz)"> Gamificação (jogos/quiz)</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Cartazes e lembretes"> Cartazes e lembretes na empresa</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Curso online rápido"> Curso online rápido</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="treinamento" value="Outro"> Outro</label>
+        </div>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nova resposta - Questionário TCC Cibersegurança Altamira">
+      <input type="hidden" name="_next" value="https://tcc-questionario-ciberseguranca.vercel.app/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white py-5 text-xl font-semibold rounded-3xl transition">
+        Enviar Respostas
+      </button>
+    </form>
+  </div>
+</body>
+</html>
