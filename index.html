@@ -13,12 +13,12 @@
     <div class="text-center mb-10">
       <h1 class="text-3xl font-bold text-green-700">Questionário de Conscientização em Cibersegurança</h1>
       <p class="text-lg mt-2 text-gray-700">Proposta de TCC - Instituto Federal do Pará<br>Altamira / 2025</p>
-      <p class="text-sm text-gray-500 mt-4">Pesquisa anônima • Suas respostas são confidenciais</p>
+      <p class="text-sm text-gray-500 mt-4">Pesquisa anônima • Suas respostas são confidenciais (LGPD)</p>
     </div>
 
-    <form action="https://formsubmit.co/nayara.producao.lima@gmail.com" method="POST" class="space-y-10">
+    <form action="https://formsubmit.co/SEUEMAIL@GMAIL.COM" method="POST" class="space-y-10">
       
-      <!-- CONSENTIMENTO LGPD (OBRIGATÓRIO) -->
+      <!-- CONSENTIMENTO LGPD -->
       <div class="bg-amber-50 border border-amber-300 p-6 rounded-2xl">
         <label class="flex gap-3 cursor-pointer">
           <input type="checkbox" required class="mt-1 w-5 h-5 accent-green-600">
@@ -26,7 +26,7 @@
         </label>
       </div>
 
-      <!-- Perfil, Conhecimento, Hábitos e Barreiras (mesmo de antes + melhorado) -->
+      <!-- 1. Perfil -->
       <div>
         <h2 class="text-xl font-semibold mb-6 flex items-center gap-2"><i class="fas fa-user"></i> 1. Perfil do Respondente</h2>
         <div class="grid grid-cols-2 gap-6">
@@ -56,18 +56,28 @@
             </select>
           </div>
         </div>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <label class="flex items-center gap-2"><input type="checkbox" name="usa_digital" value="Sim"> Uso ferramentas digitais diariamente</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="acesso_dados" value="Sim"> Tenho acesso a dados sensíveis</label>
+        </div>
       </div>
 
+      <!-- 2. Conhecimento -->
       <div>
         <h2 class="text-xl font-semibold mb-6">2. Conhecimento sobre Cibersegurança</h2>
         <div class="space-y-8">
           <div>
-            <p class="mb-3">Você já ouviu falar de <strong>phishing</strong> (e-mails falsos)?</p>
+            <p class="mb-3">Você já ouviu falar de <strong>phishing</strong> (e-mails falsos pedindo senhas ou cliques)?</p>
             <label class="flex gap-3"><input type="radio" name="phishing" value="Sim" required> Sim</label>
             <label class="flex gap-3"><input type="radio" name="phishing" value="Não"> Não</label>
           </div>
           <div>
-            <p class="mb-3">O que você faria ao receber um e-mail pedindo para “atualizar senha urgentemente”?</p>
+            <p class="mb-3">Você já ouviu falar de <strong>smishing</strong> (mensagens de WhatsApp falsas pedindo cliques ou dados)?</p>
+            <label class="flex gap-3"><input type="radio" name="smishing" value="Sim" required> Sim</label>
+            <label class="flex gap-3"><input type="radio" name="smishing" value="Não"> Não</label>
+          </div>
+          <div>
+            <p class="mb-3">O que você faria ao receber um e-mail ou WhatsApp pedindo para “atualizar senha urgentemente”?</p>
             <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Clicaria no link" required> Clicaria no link</label>
             <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Ignoraria"> Ignoraria</label>
             <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Verificaria com o responsável"> Verificaria com o responsável da empresa</label>
@@ -75,37 +85,9 @@
         </div>
       </div>
 
+      <!-- 3. Hábitos de segurança -->
       <div>
-        <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança</h2>
+        <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança (marque a frequência)</h2>
         <table class="w-full text-sm">
-          <thead class="bg-gray-100"><tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text-center">Sempre</th></tr></thead>
-          <tbody class="divide-y">
-            <tr><td class="p-4">Uso senhas fortes e diferentes em cada conta</td><td class="text-center"><input type="radio" name="senhas" value="Nunca"></td><td class="text-center"><input type="radio" name="senhas" value="Raramente"></td><td class="text-center"><input type="radio" name="senhas" value="Às vezes"></td><td class="text-center"><input type="radio" name="senhas" value="Sempre"></td></tr>
-            <tr><td class="p-4">Verifico o endereço (URL) antes de clicar em links</td><td class="text-center"><input type="radio" name="url" value="Nunca"></td><td class="text-center"><input type="radio" name="url" value="Raramente"></td><td class="text-center"><input type="radio" name="url" value="Às vezes"></td><td class="text-center"><input type="radio" name="url" value="Sempre"></td></tr>
-            <tr><td class="p-4">Atualizo meu antivírus e sistema operacional</td><td class="text-center"><input type="radio" name="atualizacao" value="Nunca"></td><td class="text-center"><input type="radio" name="atualizacao" value="Raramente"></td><td class="text-center"><input type="radio" name="atualizacao" value="Às vezes"></td><td class="text-center"><input type="radio" name="atualizacao" value="Sempre"></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div>
-        <h2 class="text-xl font-semibold mb-6">4. Percepções e barreiras</h2>
-        <p class="mb-3">O que mais dificulta seguir boas práticas de segurança?</p>
-        <div class="grid grid-cols-2 gap-3 text-sm">
-          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Falta de tempo"> Falta de tempo</label>
-          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Não sei como fazer"> Não sei como fazer</label>
-          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Empresa não exige"> Empresa não exige</label>
-          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Acho que não vai acontecer comigo"> Acho que não vai acontecer comigo</label>
-        </div>
-      </div>
-
-      <input type="hidden" name="_subject" value="Nova resposta - Questionário TCC Cibersegurança Altamira">
-      <input type="hidden" name="_next" value="https://tcc-questionario-ciberseguranca.vercel.app/obrigado.html">
-      <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white py-5 text-xl font-semibold rounded-3xl transition">
-        Enviar Respostas
-      </button>
-    </form>
-  </div>
-</body>
-</html>
+          <thead class="bg-gray-100">
+            <tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text
