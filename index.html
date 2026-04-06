@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário TCC - Cibersegurança PMEs Altamira</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>body{font-family:system-ui,-apple-system,sans-serif}</style>
+</head>
+<body class="bg-gray-100 py-8">
+  <div class="max-w-3xl mx-auto px-6 bg-white shadow-2xl rounded-3xl p-8">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-bold text-green-700">Questionário de Conscientização em Cibersegurança</h1>
+      <p class="text-lg mt-2 text-gray-700">Proposta de TCC - Instituto Federal do Pará<br>Altamira / 2025</p>
+      <p class="text-sm text-gray-500 mt-4">Pesquisa anônima • Suas respostas são confidenciais</p>
+    </div>
+
+    <form action="https://formsubmit.co/nayara.producao.lima@gmail.com" method="POST" class="space-y-10">
+      
+      <!-- Consentimento LGPD -->
+      <div class="bg-amber-50 border border-amber-300 p-6 rounded-2xl">
+        <label class="flex gap-3 cursor-pointer">
+          <input type="checkbox" required class="mt-1 w-5 h-5 accent-green-600">
+          <span class="text-sm leading-relaxed">Eu li e concordo em participar desta pesquisa de forma <strong>voluntária e anônima</strong>, conforme a Lei Geral de Proteção de Dados (LGPD). Minhas respostas serão usadas apenas para fins acadêmicos do TCC.</span>
+        </label>
+      </div>
+
+      <!-- Perfil -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6 flex items-center gap-2"><i class="fas fa-user"></i> 1. Perfil do Respondente</h2>
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm mb-2">Faixa etária</label>
+            <select name="idade" required class="w-full p-4 border rounded-2xl">
+              <option value="">Selecione</option>
+              <option value="18-25">18-25 anos</option>
+              <option value="26-35">26-35 anos</option>
+              <option value="36-45">36-45 anos</option>
+              <option value="46-60">46-60 anos</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm mb-2">Cargo na empresa</label>
+            <input type="text" name="cargo" required placeholder="Ex: Gerente, Vendedor, Técnico..." class="w-full p-4 border rounded-2xl">
+          </div>
+          <div>
+            <label class="block text-sm mb-2">Setor da PME</label>
+            <select name="setor" required class="w-full p-4 border rounded-2xl">
+              <option value="">Selecione</option>
+              <option value="Comércio">Comércio</option>
+              <option value="Serviços">Serviços</option>
+              <option value="Indústria">Indústria</option>
+              <option value="Agropecuária">Agropecuária</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <label class="flex items-center gap-2"><input type="checkbox" name="usa_digital" value="Sim"> Uso ferramentas digitais diariamente</label>
+          <label class="flex items-center gap-2"><input type="checkbox" name="acesso_dados" value="Sim"> Tenho acesso a dados sensíveis da empresa</label>
+        </div>
+      </div>
+
+      <!-- Conhecimento -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6">2. Conhecimento sobre Cibersegurança</h2>
+        <div class="space-y-8">
+          <div>
+            <p class="mb-3">Você já ouviu falar de <strong>phishing</strong> (e-mails falsos que pedem senhas ou cliques)?</p>
+            <label class="flex gap-3"><input type="radio" name="phishing" value="Sim" required> Sim</label>
+            <label class="flex gap-3"><input type="radio" name="phishing" value="Não"> Não</label>
+          </div>
+          <div>
+            <p class="mb-3">O que você faria ao receber um e-mail pedindo para “atualizar senha urgentemente”?</p>
+            <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Clicaria no link" required> Clicaria no link</label>
+            <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Ignoraria"> Ignoraria</label>
+            <label class="flex gap-3"><input type="radio" name="acao_phishing" value="Verificaria com o responsável"> Verificaria com o responsável da empresa</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comportamentos -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6">3. Seus hábitos de segurança (marque a frequência)</h2>
+        <table class="w-full text-sm">
+          <thead class="bg-gray-100">
+            <tr><th class="p-4 text-left">Comportamento</th><th class="text-center">Nunca</th><th class="text-center">Raramente</th><th class="text-center">Às vezes</th><th class="text-center">Sempre</th></tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr><td class="p-4">Uso senhas fortes e diferentes em cada conta</td>
+              <td class="text-center"><input type="radio" name="senhas" value="Nunca"></td>
+              <td class="text-center"><input type="radio" name="senhas" value="Raramente"></td>
+              <td class="text-center"><input type="radio" name="senhas" value="Às vezes"></td>
+              <td class="text-center"><input type="radio" name="senhas" value="Sempre"></td>
+            </tr>
+            <tr><td class="p-4">Verifico o endereço (URL) antes de clicar em links</td>
+              <td class="text-center"><input type="radio" name="url" value="Nunca"></td>
+              <td class="text-center"><input type="radio" name="url" value="Raramente"></td>
+              <td class="text-center"><input type="radio" name="url" value="Às vezes"></td>
+              <td class="text-center"><input type="radio" name="url" value="Sempre"></td>
+            </tr>
+            <tr><td class="p-4">Atualizo meu antivírus e sistema operacional</td>
+              <td class="text-center"><input type="radio" name="atualizacao" value="Nunca"></td>
+              <td class="text-center"><input type="radio" name="atualizacao" value="Raramente"></td>
+              <td class="text-center"><input type="radio" name="atualizacao" value="Às vezes"></td>
+              <td class="text-center"><input type="radio" name="atualizacao" value="Sempre"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Percepções e Barreiras -->
+      <div>
+        <h2 class="text-xl font-semibold mb-6">4. Percepções e barreiras</h2>
+        <p class="mb-3">O que mais dificulta você seguir boas práticas de segurança na empresa?</p>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Falta de tempo"> Falta de tempo</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Não sei como fazer"> Não sei como fazer</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Empresa não exige"> Empresa não exige</label>
+          <label class="flex items-center gap-2 bg-gray-50 p-4 rounded-2xl"><input type="checkbox" name="barreira" value="Acho que não vai acontecer comigo"> Acho que não vai acontecer comigo</label>
+        </div>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nova resposta - Questionário TCC Cibersegurança Altamira">
+      <input type="hidden" name="_next" value="https://SEU-REPOSITORIO.vercel.app/obrigado.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white py-5 text-xl font-semibold rounded-3xl transition">
+        Enviar Respostas
+      </button>
+    </form>
+  </div>
+</body>
+</html>
